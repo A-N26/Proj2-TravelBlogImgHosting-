@@ -10,7 +10,7 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(37, 34, 34, 0.5)), url("/public/images/download.jpeg");
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(37, 34, 34, 0.5)), url('../public/images/download.jpeg');
     /* background: url("/public/images/download.jpeg"); */
     height: 100vh;
     align-self: center;
@@ -37,6 +37,13 @@ body {
 .text-container {
     text-align: center;
     max-width: 1200px;
+}
 
+.navbar.scrolled {
+    background: brown;
+    transition: background 1s;
+}
 
+#register-text {
+    color: rgb(10, 9, 15);
 }
