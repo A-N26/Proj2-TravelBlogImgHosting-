@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #4B0082;
+    color: aliceblue;
+}
+
+body {
+    height: 100vh;
+}
+
+.cover-container {
+    max-width: 60vw;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+    transition: 0.3s;
+}
+
+.nav-link.active {
+    color: white;
+    border-bottom-color: white;
+}
+
+.nav-link:hover {
+    color: black;
+    border-bottom-color: rgba(255, 255, 255, 0.5)
+}
+
+
+
+/* for login & register forms*/
+.login-text,
+#register-text {
+    color: rgb(188, 188, 188);
+    border-bottom: 4px solid #553d49;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#register-text {
+    color: rgb(196, 111, 21);
+    border-bottom: 4px solid #cbc7c7;
+}
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex
+}
+
+section .img-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+}
+
+.img-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #2f2828, #1E1E1E);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+.content-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 50%;
+}
+
+.form-box h2 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-icons-container li {
+    list-style: none;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    width: 60px;
+    cursor: pointer;
+}
+
+.social-icons-container li img {
+    transition: 0.2s ease;
+    width: 35px;
+}
+
+.social-icons-container img:hover {
+    transform: translateY(4px);
+    box-shadow: 0 5px 2px -2px gray;
+    color: black;
+}
+
+.btn-primary {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(2px);
+    box-shadow: 0 5px 2px -2px rgb(37, 37, 37);
+    background-color: rgb(214, 108, 70);
+    color: rgb(39, 235, 228);
+}
+
+#submit-btn {
+    background-color: #970032;
+}
+
+#register-btn {
+    background-color: #19008b;
+}
+
+.form-label::after {
+    content: "*";
+    padding-left: 4px;
+    color: red;
+}
