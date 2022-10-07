@@ -20,7 +20,7 @@ Html,CSS,Javascript,Node.js,Inquirer,Bootstrap,JQuery,Greensock,MySQL,Sequelize,
 - [Usage](#Usage)
 - [Links](#Links)
 - [Credits](#Credits)
-- [Licence](#Licence)
+- [Licence](#License)
 - [Badges](#Badges)
 - [Questions](#Questions)
 - [Tests](#Tests)
