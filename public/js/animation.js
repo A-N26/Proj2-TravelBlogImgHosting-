@@ -1,3 +1,4 @@
+//for login & signup images
 gsap.from(".bg-img", {
   duration: 2.5,
   opacity: 0,
@@ -5,20 +6,22 @@ gsap.from(".bg-img", {
   y: -500,
 });
 
-// for hero text
+//for hero text
 let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".hero"
   }
 });
-tl.from(".hp-welcome", {y: 250, opacity: 0, duration: 1.8})
-tl.from(".hp-welcome-intro", {y: 150, opacity: 0, duration: 1.4})
+tl.from(".hp-welcome", { y: 250, opacity: 0, duration: 1.8 })
+tl.from(".hp-welcome-intro", { y: 150, opacity: 0, duration: 1.4 })
 
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-const smoother = ScrollSmoother.create({
- content: ".card",
- smooth: 3,
- effects: true
-});
+//for navbar
+const navbar = document.querySelector('#mainNavbar');
+window.onscroll = () => {
+  if (window.scrollY > 3) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+};
