@@ -16,7 +16,7 @@ const hbs = exphbs.create({
 });
 
 const sess = {
-  secret: "Tech blog secret",
+  secret: "blogsecret",
   cookie: {},
   resave: false,
   saveUninitialized: true,

@@ -11,7 +11,6 @@ let tl = gsap.timeline({
     trigger: ".hero"
   }
 });
-// tl.from(".text-container", {y: 250, opacity: 0, duration: 3})
 tl.from(".hp-welcome", {y: 250, opacity: 0, duration: 1.8})
 tl.from(".hp-welcome-intro", {y: 150, opacity: 0, duration: 1.4})
 
