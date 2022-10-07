@@ -18,6 +18,7 @@ const loginFormHandler = async function (event) {
     } else {
         alert('Sorry, wrong username and password. Please try again.');
     }
+
 };
 
 document

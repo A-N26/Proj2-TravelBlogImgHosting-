@@ -15,7 +15,6 @@ let tl = gsap.timeline({
 tl.from(".hp-welcome", { y: 250, opacity: 0, duration: 1.8 })
 tl.from(".hp-welcome-intro", { y: 150, opacity: 0, duration: 1.4 })
 
-
 //for navbar
 const navbar = document.querySelector('#mainNavbar');
 window.onscroll = () => {
