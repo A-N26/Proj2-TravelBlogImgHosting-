@@ -216,4 +216,5 @@ section .img-container {
     font-family: 'Fredoka One', cursive;
     color: #63a1e9;
     font-weight: 900;
+    text-shadow: 2px 2px #ea05c4;
 }
