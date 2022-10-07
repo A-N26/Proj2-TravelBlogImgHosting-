@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +39,7 @@ body {
     border-bottom-color: rgba(96, 2, 172, 0.5);
 }
 
-/* for login & register forms*/
+/* for login & register forms:*/
 .login-text,
 #register-text {
     color: rgb(188, 188, 188);
@@ -168,6 +167,7 @@ section .img-container {
     color: red;
 }
 
+/* for homepage: */
 .hero {
     display: flex;
     flex-direction: column;
