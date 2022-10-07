@@ -73,7 +73,7 @@ If you would like to as me anything (ama) about the project, please contact me o
 
 <summary>Contact Me</summary>
 
-- [Mustapha taylor](https://github.com/mtaylo1), [A-N26](https://github.com/A-N26), [chichiulam2022](https://github.com/chichiulam2022) & [Loo Wah Kong]
+- [Mustapha Taylor](https://github.com/mtaylo1), [A-N26](https://github.com/A-N26), [chichiulam2022](https://github.com/chichiulam2022) & [Loo Wah Kong]
 
 - [My e-mail](Soon...)
 
