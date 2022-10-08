@@ -64,18 +64,21 @@ body {
     text-align: center;
     font-size: 4rem;
     letter-spacing: 1px;
+    text-shadow: 5px 4px 7px #e24502;
 }
 
 .s2 h1 {
     text-align: left;
-    margin-left: 2em;
+    margin-left: 1.5em;
     letter-spacing: 1px;
+    text-shadow: 6px 4px 8px #e24502;
 }
 
 .s3 h1 {
     text-align: center;
-    margin-left: 2em;
+    margin-left: 1.5em;
     letter-spacing: 1px;
+    text-shadow: 6px 4px 8px #e24502;
 }
 
 #fp-nav ul li a span,
@@ -288,7 +291,7 @@ section .img-container {
     font-family: 'Fredoka One', cursive;
     color: var(--orange-brand-color);
     font-weight: 900;
-    text-shadow: 2.5px 2px #2a2929;
+    text-shadow: 2px 2px 2px #6d0d79;
     letter-spacing: .5px;
 }
 
