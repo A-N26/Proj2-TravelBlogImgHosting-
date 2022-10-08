@@ -15,8 +15,10 @@ const hbs = exphbs.create({
   helpers: hbsHelpers,
 });
 
+const secret = process.env.SECRET || "blogsecret"
+
 const sess = {
-  secret: "blogsecret",
+  secret,
   cookie: {},
   resave: false,
   saveUninitialized: true,
@@ -38,7 +40,11 @@ app.use(routes);
 
 app.use(require("./controllers/"));
 
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}!`);
-  sequelize.sync({ force: false });
+// app.listen(PORT, () => {
+//   console.log(`App listening on port ${PORT}!`);
+//   sequelize.sync({ force: false });
+// });
+
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log(`Now listening on port ${PORT}`));
 });
