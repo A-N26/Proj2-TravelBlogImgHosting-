@@ -24,3 +24,12 @@ window.onscroll = () => {
     navbar.classList.remove('scrolled');
   }
 };
+
+//for pull page
+new fullpage("#fullPage", {
+  autoScrolling: true,
+  scrollBar: true,
+  navigation: true,
+  fadingEffect: true,
+  credits: { enabled: false, label: 'Made with fullPage.js', position: 'right' },
+})

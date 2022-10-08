@@ -14,7 +14,8 @@ const loginFormHandler = async function (event) {
     });
 
     if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/homepage');
+        alert(`Successfully logged in.`)
     } else {
         alert('Sorry, wrong username and password. Please try again.');
     }

@@ -10,9 +10,14 @@
     color: aliceblue;
 }
 
+:root {
+    --purple-bg-color: #250130;
+    --orange-brand-color: #e24502;
+}
+
 body {
     height: 100vh;
-    background-color: #250130;
+    background-color: var(--purple-bg-color);
 }
 
 .cover-container {
@@ -37,6 +42,55 @@ body {
 .nav-link:hover {
     color: black;
     border-bottom-color: rgba(96, 2, 172, 0.5);
+}
+
+/* for intropage */
+.s1 {
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url("../images/adrien-olichon--dX49A6SU9w-unsplash.jpg");
+    background-size: cover;
+}
+
+.s2 {
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url("/images/lake-nature-night-reflection-r1.jpeg");
+    background-size: cover;
+}
+
+.s3 {
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url("/images/pexels-luis-del-río-15286.jpg");
+    background-size: cover;
+}
+
+.s1 h1 {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+.s2 h1 {
+    text-align: left;
+    margin-left: 2em;
+    letter-spacing: 1px;
+}
+
+.s3 h1 {
+    text-align: center;
+    margin-left: 2em;
+    letter-spacing: 1px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: var(--orange-brand-color) !important;
+}
+
+.s3 #brand-name {
+    letter-spacing: 2px;
+    opacity: 0.6;
+    transition: 0.3s ease;
+}
+
+.s3 #brand-name:hover {
+    opacity: 1;
 }
 
 /* for login & register forms:*/
@@ -202,7 +256,7 @@ section .img-container {
 }
 
 .scrolled {
-    background: rgb(64, 125, 157);
+    background: var(--purple-bg-color);
     transition: background 1s ease;
 }
 
@@ -232,14 +286,14 @@ section .img-container {
 #mad-travellers,
 #brand-name {
     font-family: 'Fredoka One', cursive;
-    color: #e24502;
+    color: var(--orange-brand-color);
     font-weight: 900;
     text-shadow: 2.5px 2px #2a2929;
     letter-spacing: .5px;
 }
 
 .text-container h5 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.5;
     letter-spacing: 0.8px;
 }
