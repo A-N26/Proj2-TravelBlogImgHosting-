@@ -6,7 +6,7 @@
     <div class="content-container">
 
         <form id="login-form" action="" method="" novalidate class="form-box validated-form">
-            <h2 class="login-text">Login</h2>
+            <h2 class="login-text"><span id="brand-name">NoMadTraveller</span> LOGIN</h2>
             <div class="mb-3">
                 <label class="form-label" for="username">Username</label>
                 <input class="form-control" type="text" id="username-input-login" placeholder="Enter Your Username"
@@ -43,7 +43,9 @@
                     <li><img src="/images/icons8-twitter-96.png"></li>
                 </ul>
             </div>
-
+            <div class="mt-5">
+                {{>brandname}}
+            </div>
         </form>
 
     </div>
