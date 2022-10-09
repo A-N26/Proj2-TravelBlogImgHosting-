@@ -51,18 +51,18 @@ body {
 }
 
 .s2 {
-    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url("/images/lake-nature-night-reflection-r1.jpeg");
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url("../images/wp2831093-paris-night-wallpaper.jpg");
     background-size: cover;
 }
 
 .s3 {
-    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url("/images/pexels-luis-del-río-15286.jpg");
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url("../images/pexels-luis-del-río-15286.jpg");
     background-size: cover;
 }
 
 .s1 h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     letter-spacing: 1px;
     text-shadow: 5px 4px 7px #e24502;
 }
@@ -76,7 +76,7 @@ body {
 
 .s3 h1 {
     text-align: center;
-    margin-left: 1.5em;
+    font-size: 3.5rem;
     letter-spacing: 1px;
     text-shadow: 6px 4px 8px #e24502;
 }
@@ -230,7 +230,7 @@ section .img-container {
 .hero {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url('/images/download.jpeg');
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url('../images/lake-nature-night-reflection-r1.jpeg');
     height: 100vh;
     align-self: center;
     background-repeat: no-repeat;
@@ -291,7 +291,7 @@ section .img-container {
     font-family: 'Fredoka One', cursive;
     color: var(--orange-brand-color);
     font-weight: 900;
-    text-shadow: 2px 2px 2px #6d0d79;
+    text-shadow: 2px 2px 2px #332336;
     letter-spacing: .5px;
 }
 
@@ -312,4 +312,107 @@ section .img-container {
 #divider {
     color: #322d2e;
     font-weight: lighter;
+}
+
+/* for blog cards (homepage) */
+
+.card {
+    text-decoration: none;
+    border: none;
+}
+
+.card-title {
+    color: black;
+}
+
+.card-text {
+    color: rgb(129, 26, 26);
+}
+
+
+
+/* for about me page */
+.flip-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 250px;
+    perspective: 950px;
+    margin-left: 30px;
+}
+
+.flip-card:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: var(--orange-brand-color);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.flip-card-back h4 {
+    padding-top: 20px;
+}
+
+.flip-card img {
+    border-radius: 10px;
+}
+
+.flip-card-back a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.flip-card-back a:hover {
+    color: rgb(244, 228, 228);
+}
+
+.flip-card-container {
+    display: flex;
+}
+
+#about-us-intro-text {
+    text-align: center;
+    transform: translateY(220px);
 }
