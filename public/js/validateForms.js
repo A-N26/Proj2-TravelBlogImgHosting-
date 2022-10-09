@@ -1,5 +1,4 @@
 //for validating login & signup forms
-
 (function () {
   "use strict";
 

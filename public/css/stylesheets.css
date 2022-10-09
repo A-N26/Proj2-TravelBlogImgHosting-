@@ -78,7 +78,7 @@ body {
     text-align: center;
     font-size: 3.5rem;
     letter-spacing: 1px;
-    text-shadow: 6px 4px 8px #e24502;
+    text-shadow: 6px 4px 8px #8d3915;
 }
 
 #fp-nav ul li a span,
@@ -86,13 +86,14 @@ body {
     background: var(--orange-brand-color) !important;
 }
 
-.s3 #brand-name {
+.s3 #intro-here-text {
     letter-spacing: 2px;
+    color: var(--orange-brand-color);
     opacity: 0.6;
     transition: 0.3s ease;
 }
 
-.s3 #brand-name:hover {
+.s3 #intro-here-text:hover {
     opacity: 1;
 }
 
