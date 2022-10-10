@@ -2,7 +2,6 @@ const router = require("express").Router();
 const { Post, User } = require("../models");
 // const withAuth = require("../utils/auth");
 
-
 //intro page
 router.get("/", (req, res) => {
   res.render("intropage")
@@ -43,13 +42,13 @@ router.get("/homepage", async (req, res) => {
 })
 
 //add blog
-router.get("/newblog", (req, res) => {
-  res.render("newblog", { loggedIn: req.session.loggedIn })
-})
+// router.get("/newblog", (req, res) => {
+//   res.render("newblog", { loggedIn: req.session.loggedIn })
+// })
 
 //about us 
 router.get("/about_us", (req, res) => {
-  res.render("about_us", { loggedIn: req.session.loggedIn })
+  res.render("about-us", { loggedIn: req.session.loggedIn })
 })
 
 

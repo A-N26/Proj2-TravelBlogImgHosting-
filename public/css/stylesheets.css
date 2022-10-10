@@ -462,6 +462,7 @@ section .img-container {
 .blog-container {
     border-radius: 25px;
     background: rgba(35, 15, 7, 0.7);
+    width: 60%;
 }
 
 textarea {

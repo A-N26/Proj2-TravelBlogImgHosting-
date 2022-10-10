@@ -2,33 +2,41 @@
 <section id="newblog">
     <div class="container align-items-center blog-container">
         <div class="col-md-6 offset-md-3 mt-5">
-            <form class="new-post-form">
+
+            <form class="new-post-form" action="/blog/newblog" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label class="form-label" for="post-title">Title</label>
                     <input class="form-control" type="text" id="post-title" name="post-title">
 
                 </div>
                 <div class="mb-5">
-                    <div class="mb-3">
+                    <div class="mb-1">
                         <label for="blog-content" class="form-label">Content</label>
                         <textarea class="form-control" id="blog-content" name="blog-content" rows="10"></textarea>
                     </div>
                 </div>
 
-                <div class="mb-3 mt-3">
-                    <div class="form-file custom-file">
-                        <input type="file" class="form-file-input" id="image" name="image" multiple>
-                        <label class="form-file-label" for="image">
-                            <span class="form-file-text custom-file-label">Choose image(s)...</span>
-                            <span class="form-file-button">Browse</span>
-                        </label>
+                <div class="form-file mb-4">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="image">
+                        <label class="custom-file-label" for="image">Choose file</label>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <button class="btn btn-outline-info btn-sm">Add Post</button>
-                </div>
+                <button class="btn btn-outline-info btn-sm mb-3">Add Post</button>
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+                <script>
+                    $(".custom-file-input").on("change", function () {
+                        var fileName = $(this).val().split("\\").pop();
+                        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+                    });
+                </script>
+
             </form>
 
         </div>
     </div>
+
 </section>
