@@ -13,7 +13,7 @@ Comment.init(
             primaryKey: true
         },
         comment_text: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
             allowNull: false
         },
         post_id: {

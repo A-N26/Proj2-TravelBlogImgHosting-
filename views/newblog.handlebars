@@ -1,0 +1,34 @@
+{{>navbar}}
+<section id="newblog">
+    <div class="container align-items-center blog-container">
+        <div class="col-md-6 offset-md-3 mt-5">
+            <form class="new-post-form">
+                <div class="mb-3">
+                    <label class="form-label" for="post-title">Title</label>
+                    <input class="form-control" type="text" id="post-title" name="post-title">
+
+                </div>
+                <div class="mb-5">
+                    <div class="mb-3">
+                        <label for="blog-content" class="form-label">Content</label>
+                        <textarea class="form-control" id="blog-content" name="blog-content" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="mb-3 mt-3">
+                    <div class="form-file custom-file">
+                        <input type="file" class="form-file-input" id="image" name="image" multiple>
+                        <label class="form-file-label" for="image">
+                            <span class="form-file-text custom-file-label">Choose image(s)...</span>
+                            <span class="form-file-button">Browse</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-outline-info btn-sm">Add Post</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>

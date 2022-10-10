@@ -14,87 +14,48 @@
     </div>
 </section>
 
+
 <body>
-    <div class="py-5 h-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 pt-2 pb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="/images/craig-philbrick-unk8y_XYgto-unsplash.jpg"
-                            alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title text-center pt-3">Paris</h4>
-                            <p class="card-text text-center mx-3 mb-3 pt-1">The most romantic city in the world! J'aime
-                                Paris!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            {{#each data}}
+            {{>blogcard}}
+            {{/each}}
 
 
-                <div class="col-md-4 pt-2 pb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="/images/david-mclenachan-K8IlloSJ4fI-unsplash.jpg"
-                            alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title text-center pt-3">Banff</h4>
-                            <p class="card-text text-center mx-3 mb-3 pt-1">Wonderful Canadian nature in Alberta.
-                            </p>
-                        </div>
+            {{!--
+            <div class=" col-md-4 mt-5">
+                <div class="card shadow">
+                    <div class="inner">
+                        {{#each posts}}
+                        <img class="card-img-top" src="{{image}}">
+                        {{/each}}
                     </div>
-                </div>
+                    <div class="card-text text-center mb-3">
+                        {{#each posts}}
+                        <h5 class="card-title mt-2 mx-3">{{title}}</h5>
+                        <p class="card-text mx-2">{{{shortText content 100}}}
+                            {{/each}}
 
-                <div class="col-md-4 pt-2 pb-4">
-                    <div class="card">
-                        <img class="card-img-top"
-                            src="/images/fuji-and-sakura-royalty-free-image-144483163-1562593125.jpg"
-                            alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title text-center pt-3">Japan</h4>
-                            <p class="card-text text-center mx-3 mb-3 pt-1">Cherry blossom in boom! Must go.
-                            </p>
-                        </div>
+                        </p>
+                        <a href="a" class="read-more-link"><i
+                                class="fa-solid fa-book-open-reader"></i>&nbsp&nbsp&nbspRead
+                            More</a>
                     </div>
                 </div>
+            </div> --}}
 
-                <div class="col-md-4 pt-2 pb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="/images/phuket-travel-guide-2020.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title text-center pt-3">Phuket</h4>
-                            <p class="card-text text-center mx-3 mb-3 pt-1">Embrace the breathtaking mountains and
-                                oceans in Thailand.
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-4 pt-2 pb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="/images/20211105_181519.jpeg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title text-center pt-3">Toronto</h4>
-                            <p class="card-text text-center mx-3 mb-3 pt-1">Always the most hustle and bustle but
-                                energetic city in Canada.
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-4 pt-2 pb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="/images/download.jpeg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title text-center pt-3">Amsterdam</h4>
-                            <p class="card-text text-center mx-3 mb-3 pt-1">One of the most eco and bike-friendly
-                                cities
-                                in Europe.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
         </div>
+
+    </div>
+
 </body>
+
 
 {{>footer}}

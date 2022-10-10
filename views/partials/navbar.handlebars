@@ -1,14 +1,11 @@
 <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-  <a href="/" class="navbar-brand ml-5" id="brand-name">NoMadTravels</a>
+  <a href="/homepage" class="navbar-brand ml-5" id="brand-name">NoMadTravels</a>
   <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navLinks">
     <ul class="navbar-nav ml-4">
-      {{!-- <li class="nav-item ml-2 testing">
-        <a href="/" class="nav-link" id="home-text">HOME</a>
-      </li> --}}
       <li class="nav-item ml-2 my-2">
         <a href="/about_us" class="nav-link" id="about-text">ABOUT US</a>
       </li>
@@ -17,10 +14,12 @@
       <li class="nav-item ml-2 my-2">
         <a href="/homepage" class="nav-link" id="logout">LOGOUT</a>
       </li>
+
       {{else}}
       <li class="nav-item ml-2 my-2">
         <a href="/login" class="nav-link" id="login-text">LOGIN</a>
       </li>
+
       <li class="nav-item ml-2 my-2">
         <a href="/signup" class="nav-link" id="nav-register-text">SIGN UP</a>
       </li>
@@ -29,9 +28,14 @@
 
       {{#if loggedIn}}
       <li class="nav-item ml-2 my-2">
-        <a href="/" class="nav-link" id="add-blog-text">ADD YOUR BLOG</a>
+        <a href="/newblog" class="nav-link" id="add-blog-text">ADD YOUR BLOG</a>
       </li>
       {{/if}}
     </ul>
   </div>
+</nav>
+
+
+
+
 </nav>

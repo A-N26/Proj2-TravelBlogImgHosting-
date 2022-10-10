@@ -97,7 +97,7 @@ body {
     opacity: 1;
 }
 
-/* for login & register forms:*/
+/* for login & signup forms:*/
 .login-text,
 #register-text {
     color: rgb(188, 188, 188);
@@ -223,8 +223,13 @@ section .img-container {
     color: red;
 }
 
+.form-link {
+    text-decoration: none;
+}
+
 .form-link:hover {
     transition: 0.5s ease;
+    text-decoration: none;
 }
 
 /* for homepage: */
@@ -316,23 +321,48 @@ section .img-container {
 }
 
 /* for blog cards (homepage) */
-
 .card {
     text-decoration: none;
     border: none;
+    background-color: #030000;
+    /* border-radius: 8px; */
 }
 
 .card-title {
-    color: black;
+    color: rgb(212, 185, 185);
 }
 
 .card-text {
-    color: rgb(129, 26, 26);
+    color: rgb(20, 237, 204);
 }
 
+.inner {
+    overflow: hidden;
+}
 
+.inner img {
+    transition: all 1.5s ease;
+}
 
-/* for about me page */
+.inner:hover img {
+    transform: scale(1.2);
+}
+
+.read-more-link {
+    text-decoration: none;
+    color: #e24502;
+    text-transform: uppercase;
+}
+
+.read-more-link:hover {
+    text-decoration: none;
+}
+
+.fa-book-open-reader {
+    color: var(--orange-brand-color);
+}
+
+/* for about us page */
 .flip-card-container {
     display: flex;
     flex-direction: row;
@@ -411,9 +441,29 @@ section .img-container {
 
 .flip-card-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
-#about-us-intro-text {
-    text-align: center;
-    transform: translateY(220px);
+.main-section {
+    display: flex;
+    justify-content: center;
+}
+
+/* for new blog form */
+#newblog {
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url('../images/giammarco-q140lHKzXZY-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.blog-container {
+    border-radius: 25px;
+    background: rgba(35, 15, 7, 0.7);
+}
+
+textarea {
+    resize: none;
 }

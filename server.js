@@ -9,10 +9,10 @@ const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 
 const hbs = exphbs.create({
-  helpers: hbsHelpers,
+  helpers: hbsHelpers
 });
 
 const secret = process.env.SECRET || "blogsecret"
@@ -40,10 +40,7 @@ app.use(routes);
 
 app.use(require("./controllers/"));
 
-// app.listen(PORT, () => {
-//   console.log(`App listening on port ${PORT}!`);
-//   sequelize.sync({ force: false });
-// });
+
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on port ${PORT}`));
