@@ -7,7 +7,8 @@
             <h5 class="card-title mt-2 mx-3">{{title}}</h5>
             <p class="card-text mx-2">{{{shortText content 100}}}
             </p>
-            <p id="date">Posted on {{format_date createdAt}}</p>
+            <p id="date">Posted on {{format_date createdAt}} by {{#if user.username}}{{user.username}}{{else}} N/A
+                {{/if}}</p>
             <a href="a" class="read-more-link"><i class="fa-solid fa-book-open-reader"></i>&nbsp&nbsp&nbspRead
                 More</a>
         </div>

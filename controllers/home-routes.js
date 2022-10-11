@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const { Post } = require("../models");
-// const withAuth = require("../utils/auth");
+const { Post, User } = require("../models");
+const withAuth = require("../utils/auth");
 
 //intro page
 router.get("/", (req, res) => {
@@ -27,7 +27,13 @@ router.get("/homepage", async (req, res) => {
   try {
     const dbPostData = await Post.findAll({
       attributes: [
-        'title', 'content', 'image', 'createdAt'
+        'title', 'content', 'image', 'user_id', 'createdAt'
+      ],
+      include: [
+        {
+          model: User,
+          attributes: ['username']
+        }
       ]
     })
     const posts = dbPostData.map((post) => post.get({ plain: true }))
