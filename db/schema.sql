@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS project2_grou8_db;
+DROP DATABASE IF EXISTS travelblog_db;
 
-CREATE DATABASE project2_grou8_db;
+CREATE DATABASE travelblog_db;
