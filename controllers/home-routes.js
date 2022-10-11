@@ -51,7 +51,4 @@ router.get("/about_us", (req, res) => {
   res.render("about-us", { loggedIn: req.session.loggedIn })
 })
 
-
-
-
 module.exports = router;
