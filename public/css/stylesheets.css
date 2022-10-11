@@ -325,11 +325,6 @@ section .img-container {
     background-color: #970032;
 }
 
-/* .carousel {
-    height: 50%;
-    width: 100%;
-} */
-
 .carousel .item {
     height: 300px;
 }
@@ -340,8 +335,6 @@ section .img-container {
     left: 0;
     min-height: 300px;
 }
-
-
 
 
 /* for blog cards (homepage) */
@@ -384,6 +377,10 @@ section .img-container {
 
 .fa-book-open-reader {
     color: var(--orange-brand-color);
+}
+
+#date {
+    font-style: oblique;
 }
 
 /* for about us page */

@@ -5,20 +5,20 @@
 
             <form class="new-post-form" action="/blog/newblog" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label class="form-label" for="post-title">Title</label>
-                    <input class="form-control" type="text" id="post-title" name="post-title">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="title">
 
                 </div>
                 <div class="mb-5">
                     <div class="mb-1">
-                        <label for="blog-content" class="form-label">Content</label>
-                        <textarea class="form-control" id="blog-content" name="blog-content" rows="10"></textarea>
+                        <label for="content" class="form-label">Content</label>
+                        <textarea class="form-control" id="content" name="content" rows="10"></textarea>
                     </div>
                 </div>
 
                 <div class="form-file mb-4">
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="image">
+                        <input type="file" name="image" class="custom-file-input" id="image">
                         <label class="custom-file-label" for="image">Choose file</label>
                     </div>
                 </div>

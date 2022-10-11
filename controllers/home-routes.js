@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Post, User } = require("../models");
+const { Post } = require("../models");
 // const withAuth = require("../utils/auth");
 
 //intro page
@@ -22,29 +22,23 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 
-//get all posts
+//get all posts for homepage
 router.get("/homepage", async (req, res) => {
   try {
     const dbPostData = await Post.findAll({
       attributes: [
-        'title', 'content', 'image'
+        'title', 'content', 'image', 'createdAt'
       ]
     })
     const posts = dbPostData.map((post) => post.get({ plain: true }))
+    // res.send(posts)
     res.render('homepage', { data: posts, loggedIn: req.session.loggedIn })
-    console.log(posts)
-    // console.log(req.session.loggedIn)
   }
   catch (err) {
     console.log(err)
     res.status(500).json(err)
   }
 })
-
-//add blog
-// router.get("/newblog", (req, res) => {
-//   res.render("newblog", { loggedIn: req.session.loggedIn })
-// })
 
 //about us 
 router.get("/about_us", (req, res) => {
