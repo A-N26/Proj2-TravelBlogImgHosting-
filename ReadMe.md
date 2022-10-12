@@ -33,7 +33,7 @@ Html,CSS,Javascript,Node.js,Inquirer,Bootstrap,JQuery,Greensock,MySQL,Sequelize,
 
 ## _Usage_
 
-Simply click the deployed Heroku link to access the application. Thereafter, create login credentials. Once done u should be good to explore the application, post img, write comment, etc.</br>
+Simply click the deployed Heroku link (mentioned under Links section) to access the application. Thereafter, create login credentials. Once done u should be good to explore the application, post img, write comment, etc.</br>
 Helpful images/gifs/video are posted below:</br>
 
 Application front page preview:
