@@ -62,10 +62,10 @@ Deployed Heroku URL: http://www.example.com
 
 ## _Credits_
 
-- Mustapha TAYLOR (<https://github.com/mtaylo1>)
-- Chi Chiu LAM (<https://github.com/chichiulam2022>)
-- Loo Wah KONG (<https://github.com/andyloo416>)
-- Aashay NAGAR (<https://github.com/A-N26>)
+- [Mustapha TAYLOR](https://github.com/mtaylo1)
+- [Chi Chiu LAM](https://github.com/chichiulam2022)
+- [Wah Kong LOO](https://github.com/andyloo416)
+- [Aashay NAGAR](https://github.com/A-N26)
 
 ## _License_
 
