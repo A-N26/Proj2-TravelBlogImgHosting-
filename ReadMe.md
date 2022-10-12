@@ -37,11 +37,22 @@ Simply click the deployed Heroku link (mentioned under Links section) to access 
 Helpful images/gifs/video are posted below:</br>
 
 Application front page preview:
-![AppPreview](./public/images/readme/app_preview.png)</br>
+</br>
+![AppPreview](./public/images/readme/app_preview.png)
+</br>
+</br>
+
 The About Us page cards individually rotate to reveal the team members:
-![About Me](./public/images/readme/about_me.jpg)</br>
+</br>
+<img width="1425" alt="Screen Shot 2022-10-12 at 12 04 33 AM" src="https://user-images.githubusercontent.com/108379616/195248318-2c1d294f-4cc9-4867-b21b-23a89bedfd0a.png">
+</br>
+</br>
+
 Signup & login pages:
+</br>
 ![SignUp](./public/images/readme/signup.png)
+</br>
+</br>
 ![LogIn](./public/images/readme/login.png)
 
 ## _Links_
