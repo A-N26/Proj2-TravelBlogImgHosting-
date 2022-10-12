@@ -6,7 +6,7 @@
 
 ## <div align="center"> _Description_ </div>
 
-Class group Project 2 - To create a functional real-world full-stack application and deploy to heroku.
+Group Project 2 - To create a functional real-world full-stack application and deploy to heroku.
 
 ## <div align="center"> _Languages Used_ </div>
 
