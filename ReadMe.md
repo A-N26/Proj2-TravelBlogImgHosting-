@@ -56,16 +56,9 @@ Signup & login pages:
 ![LogIn](./public/images/readme/login.png)
 
 ## _Links_
-
-<details>
-
-<summary>Github and deploy Links</summary>
-
-> repo: <https://github.com/A-N26/Proj2-TravelBlogImgHosting->
-
-- > Heroku: <https://nomadtravelblog.herokuapp.com/>
-
-</details>
+GitHub Repo URL: https://github.com/A-N26/Proj2-TravelBlogImgHosting
+<br/>
+Deployed Heroku URL: http://www.example.com
 
 ## _Credits_
 
