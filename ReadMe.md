@@ -34,7 +34,15 @@ Html,CSS,Javascript,Node.js,Inquirer,Bootstrap,JQuery,Greensock,MySQL,Sequelize,
 ## _Usage_
 
 Simply click the deployed Heroku link to access the application. Thereafter, create login credentials. Once done u should be good to explore the application, post img, write comment, etc.</br>
-Helpful images/gifs/video are posted below:
+Helpful images/gifs/video are posted below:</br>
+
+Application front page preview:
+![AppPreview](./public/images/readme/app_preview.png)</br>
+The About Us page cards individually rotate to reveal the team members:
+![About Me](./public/images/readme/about_me.jpg)</br>
+Signup & login pages:
+![SignUp](./public/images/readme/signup.png)
+![LogIn](./public/images/readme/login.png)
 
 ## _Links_
 
