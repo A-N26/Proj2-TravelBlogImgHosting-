@@ -13,12 +13,6 @@ router.get("/newblog", (req, res) => {
 
 //create a new blog post
 router.post('/newblog', authenticate, upload.single('image'), (req, res) => {
-    // const { title, content } = req.body
-    // const imageUrl = req.file.path
-    // console.log(title, content, imageUrl)
-    // console.log(req.body)
-    // console.log(req.file.path)
-    // res.send('it worked')
     if (req.session) {
         Post.create({
             title: req.body.title,
@@ -26,16 +20,8 @@ router.post('/newblog', authenticate, upload.single('image'), (req, res) => {
             image: req.file.path,
             user_id: req.session.user_id
         })
-        return res.redirect("/homepage")
-            .then(dbPostData => res.json(dbPostData))
-            .catch(err => {
-                console.log(err)
-                res.status(400).json(err)
-            })
+        res.redirect("/homepage")
     }
-    // console.log(newPost)
-    // res.send("success")
-    // res.redirect("/homepage")
 })
 
 
