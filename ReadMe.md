@@ -86,5 +86,3 @@ Please do not hesitate to fork this repo. And, there-after, submit a new branch 
 ## _Tests_
 
 n/a
-
-testing
