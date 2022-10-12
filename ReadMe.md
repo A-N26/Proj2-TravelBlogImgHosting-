@@ -10,7 +10,7 @@ Class group Project 2 - To create a functional real-world full-stack application
 
 ## <div align="center"> _Languages Used_ </div>
 
-Html,CSS,Javascript,Node.js,Inquirer,Bootstrap,JQuery,Greensock,MySQL,Sequelize,Bcrypt,Express,Semantic UI,Handlebars.js
+Html,CSS,Javascript,Node.js,Inquirer,Bootstrap,JQuery,Greensock,MySQL,Sequelize,Bcrypt,Express.js,Handlebars.js
 
 ---
 
