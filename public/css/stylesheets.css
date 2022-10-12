@@ -97,6 +97,7 @@ body {
     opacity: 1;
 }
 
+
 /* for login & signup forms:*/
 .login-text,
 #register-text {
@@ -320,13 +321,40 @@ section .img-container {
     font-weight: lighter;
 }
 
-
 #banner {
     background-color: #970032;
 }
 
+/* for carousel */
 .carousel .item {
     height: 300px;
+}
+
+#india-text {
+    color: #138808;
+    line-height: 1.5;
+}
+
+#ny-text {
+    color: rgb(213, 143, 12);
+    line-height: 1.5;
+
+}
+
+#rome-text {
+    color: rgb(110, 139, 201);
+    line-height: 1.5;
+
+}
+
+#paris-text {
+    color: #ED2939;
+    line-height: 1.5;
+}
+
+#toronto-text {
+    color: rgb(157, 29, 183);
+    line-height: 1.5;
 }
 
 .item img {
