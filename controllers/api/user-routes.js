@@ -68,6 +68,7 @@ router.post('/login', async (req, res) => {
     }
 });
 
+
 //logout
 router.post('/logout', (req, res) => {
     if (req.session.loggedIn) {
@@ -78,19 +79,6 @@ router.post('/logout', (req, res) => {
         res.status(404).end();
     }
 });
-
-
-//get all users
-// router.get('/', async (req, res) => {
-//     try {
-//         const data = await User.findAll({})
-//         res.send(data)
-//     }
-//     catch (err) {
-//         console.log(err);
-//         res.status(500).json(err);
-//     }
-// })
 
 
 module.exports = router;

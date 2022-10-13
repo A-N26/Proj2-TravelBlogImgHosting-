@@ -24,6 +24,7 @@ router.get("/newblog", (req, res) => {
     res.render("newblog", { loggedIn: req.session.loggedIn })
 })
 
+
 //create a new blog post
 router.post('/newblog', authenticate, upload.single('image'), (req, res) => {
     if (req.session) {
@@ -38,7 +39,7 @@ router.post('/newblog', authenticate, upload.single('image'), (req, res) => {
 })
 
 // show individual blog post (/blog/:id)
-router.get('/:id', (req, res) => {
+router.get('/:id', authenticate, (req, res) => {
     Post.findOne({
         where: {
             id: req.params.id
@@ -81,42 +82,5 @@ router.get('/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
-
-
-
-
-
-
-
-
-// router.get("/:id", authenticate, async (req, res) => {
-//     try {
-//         const dbPostData = await Post.findByPk(req.params.id, {
-
-
-//             include: [
-//                 {
-//                     model: User,
-//                     attributes: ['username']
-//                 },
-//                 {
-//                     model: Comment,
-//                     attributes: ['id', 'comment_text', 'post_id', 'user_id', 'createdAt'],
-//                     include: {
-//                         model: User,
-//                         attributes: ['username']
-//                     }
-//                 }
-//             ]
-//         })
-//         const result = dbPostData.get({ plain: true })
-//         console.log(result)
-//         res.render("blog-detail", { data: result, loggedIn: req.session.loggedIn })
-//     }
-//     catch (err) {
-//         console.log(err);
-//         res.status(500).json(err);
-//     }
-// })
 
 module.exports = router;
