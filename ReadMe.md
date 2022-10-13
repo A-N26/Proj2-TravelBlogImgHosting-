@@ -74,7 +74,7 @@ Signup & login pages:
 ## _Links_
 GitHub Repo URL: https://github.com/A-N26/Proj2-TravelBlogImgHosting-
 <br/>
-Deployed Heroku URL: http://www.example.com
+Deployed Heroku URL: https://nomadtravelblog.herokuapp.com/
 
 ## _Credits_
 
