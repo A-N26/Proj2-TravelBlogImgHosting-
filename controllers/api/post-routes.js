@@ -1,5 +1,17 @@
-const router = require('express').Router();
+// const router = require('express').Router();
+// const sequelize = require('../../config/connection')
+// const { Post, User, Comment } = require('../../models');
+// const auth = require("../../utils/auth");
 
-const { Post, User, Comment } = require('../../models');
+// create a post
+// router.post('/', auth, (req, res) => {
+//     const body = req.body
+//     console.log(req.session.user)
+// })
 
-module.exports = router;
+// router.post('/blog/newblog', (req, res) => {
+//     const { title, content } = req.body
+//     console.log(req.file, req.body)
+// })
+
+// module.exports = router
