@@ -1,6 +1,18 @@
 const router = require('express').Router()
 const { User } = require("../../models")
 
+// get all users
+router.get('/', async (req, res) => {
+    try {
+        const data = await User.findAll({})
+        res.send(data)
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+})
+
 
 //create new user (/user)
 router.post('/', (req, res) => {
@@ -66,5 +78,19 @@ router.post('/logout', (req, res) => {
         res.status(404).end();
     }
 });
+
+
+//get all users
+// router.get('/', async (req, res) => {
+//     try {
+//         const data = await User.findAll({})
+//         res.send(data)
+//     }
+//     catch (err) {
+//         console.log(err);
+//         res.status(500).json(err);
+//     }
+// })
+
 
 module.exports = router;

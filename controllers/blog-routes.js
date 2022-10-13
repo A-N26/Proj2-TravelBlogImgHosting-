@@ -3,7 +3,20 @@ const authenticate = require('../utils/auth')
 const multer = require('multer');
 const { storage } = require("../cloudinary")
 const upload = multer({ storage })
-const { Post, Comment } = require('../models');
+const { Post, User, Comment } = require('../models');
+
+
+//get all blog posts (/blog)
+router.get('/', async (req, res) => {
+    try {
+        const data = await Post.findAll({})
+        res.send(data)
+    }
+    catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+})
 
 
 //render the blog form (/blog/newblog)
@@ -24,18 +37,34 @@ router.post('/newblog', authenticate, upload.single('image'), (req, res) => {
     }
 })
 
-
-
-// show individual blog post
+// show individual blog post (/blog/:id)
 router.get("/:id", authenticate, async (req, res) => {
     try {
         const dbPostData = await Post.findByPk(req.params.id, {
+            // include: [
+            //     {
+            //         model: Comment,
+            //         attributes: [
+            //             'comment_text'
+            //         ],
+            //         include: {
+            //             model: User,
+            //             attributes: ['username']
+            //         }
+            //     }
+            // ]
             include: [
                 {
+                    model: User,
+                    attributes: ['username']
+                },
+                {
                     model: Comment,
-                    attributes: [
-                        'comment_text'
-                    ]
+                    attributes: ['id', 'comment_text', 'post_id', 'user_id', 'createdAt'],
+                    include: {
+                        model: User,
+                        attributes: ['username']
+                    }
                 }
             ]
         })
