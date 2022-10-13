@@ -30,17 +30,14 @@ Html, CSS, Javascript, Node.js, Bootstrap, JQuery, Greensock, MySQL, Sequelize, 
 ## _Installation_
 
 
-1. Type `npm i` in terminal to install all npm dependencies from package.json.</li>
+1. Type `npm i` in terminal to install all npm dependencies from package.json.
 </br>
-
-2. Create a `.env` file in the folder and add values for database (i.e. DB_USER, DB_PW).</li>
+2. Create a `.env` file in the folder and add values for database (i.e. DB_USER, DB_PW).
 </br>
-
-3. Type `node server.js` (or 1st start mysql in terminal and type `source db/schema.sql;` followed with `show databases;` to confirm the database shows up. Then exit mysql. Now, type `npm run seed` finally followed with `npm start server`)</li>
+3. Type `node server.js` (or 1st start mysql in terminal and type `source db/schema.sql;` followed with `show databases;` to confirm the database shows up. Then exit mysql. Now, type `npm run seed` finally followed with `npm start server`)
 </br>
+4. Last, but not the least, go to a browser and type in `https://localhost/'port number'` (replace `'port number'` with a valid port#) and you should see the application.
 
-4. Last, but not the least, go to a browser and type in `https://localhost/'port number'` (replace `'port number'` with a valid port#) and you should see the application.</li>
-</ol>
 
 </br>
 
