@@ -1,11 +1,12 @@
 const router = require("express").Router();
 const { Post, User } = require("../models");
-const withAuth = require("../utils/auth");
+
 
 //intro page
 router.get("/", (req, res) => {
   res.render("intropage")
 })
+
 
 //login
 router.get('/login', (req, res) => {
@@ -21,6 +22,7 @@ router.get('/login', (req, res) => {
 router.get("/signup", (req, res) => {
   res.render("signup");
 });
+
 
 //get all posts for homepage
 router.get("/homepage", async (req, res) => {
