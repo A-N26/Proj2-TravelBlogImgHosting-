@@ -10,14 +10,14 @@ const postData = [
     },
     {
         title: "Singapore",
-        content: `Just came back from Singapore and miss the Hainanese chicken rice and bak kut the so so much! it was a tiny city like Hong Kong and the climate there was… hot and too hot… just like Hong Kong🥵(cant live without a/c). 
+        content: `Just came back from Singapore and miss the Hainanese chicken rice and bak kut the so so much! it was a tiny city like Hong Kong and the climate there was… hot and too hot… just like Hong Kong🥵(cant live without a/c).
         Oh forgot to mention the Merlion! It was so aesthetic at night and walking along the harbour sidewalk was so relaxing. We also spent some time on the universal studio, it was good but no surprise. Just the same as the one in Japan and the restaurants inside were… super expensive lol`,
         user_id: 2,
         image: 'https://i.imgur.com/aLlZGop.jpg'
     },
     {
         title: "Hong Kong",
-        content: `Went back to my lovely home last month, it’s been a year away from my family and I miss them so so much. I also miss the tram in Hong Kong, it carries a lot of memory coz I ve been taking them to the university for 4 years xd. 
+        content: `Went back to my lovely home last month, it’s been a year away from my family and I miss them so so much. I also miss the tram in Hong Kong, it carries a lot of memory coz I ve been taking them to the university for 4 years xd.
         The food is a must-try item in Hong Kong and it’s much cheaper than Toronto with the same quality. Remember to try the Japanese cuisine coz it’s much better than those in Toronto xd. One more thing, try NOT to drive in Hong Kong! It’s too crowded and the parking fee is tooooo HIGH☹`,
         user_id: 2,
         image: 'https://i.imgur.com/7kEyfzV.jpg'
