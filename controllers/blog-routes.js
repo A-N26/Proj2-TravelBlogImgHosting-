@@ -38,44 +38,85 @@ router.post('/newblog', authenticate, upload.single('image'), (req, res) => {
 })
 
 // show individual blog post (/blog/:id)
-router.get("/:id", authenticate, async (req, res) => {
-    try {
-        const dbPostData = await Post.findByPk(req.params.id, {
-            // include: [
-            //     {
-            //         model: Comment,
-            //         attributes: [
-            //             'comment_text'
-            //         ],
-            //         include: {
-            //             model: User,
-            //             attributes: ['username']
-            //         }
-            //     }
-            // ]
-            include: [
-                {
+router.get('/:id', (req, res) => {
+    Post.findOne({
+        where: {
+            id: req.params.id
+        },
+        attributes: [
+            'id',
+            'title',
+            'content',
+            'image',
+            'createdAt'
+        ],
+        include: [
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'createdAt'],
+                include: {
                     model: User,
                     attributes: ['username']
-                },
-                {
-                    model: Comment,
-                    attributes: ['id', 'comment_text', 'post_id', 'user_id', 'createdAt'],
-                    include: {
-                        model: User,
-                        attributes: ['username']
-                    }
                 }
-            ]
+            },
+            {
+                model: User,
+                attributes: ['username']
+            }
+        ]
+
+    })
+        .then(dbPostData => {
+            if (!dbPostData) {
+                res.status(404).json({ message: 'No post found with this id' });
+                return;
+            }
+            const post = dbPostData.get({ plain: true });
+            res.render("blog-detail", { data: post, loggedIn: req.session.loggedIn })
+            console.log(post)
+
         })
-        const result = dbPostData.get({ plain: true })
-        console.log(result)
-        res.render("blog-detail", { data: result, loggedIn: req.session.loggedIn })
-    }
-    catch (err) {
-        console.log(err);
-        res.status(500).json(err);
-    }
-})
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
+
+
+
+
+
+
+
+
+// router.get("/:id", authenticate, async (req, res) => {
+//     try {
+//         const dbPostData = await Post.findByPk(req.params.id, {
+
+
+//             include: [
+//                 {
+//                     model: User,
+//                     attributes: ['username']
+//                 },
+//                 {
+//                     model: Comment,
+//                     attributes: ['id', 'comment_text', 'post_id', 'user_id', 'createdAt'],
+//                     include: {
+//                         model: User,
+//                         attributes: ['username']
+//                     }
+//                 }
+//             ]
+//         })
+//         const result = dbPostData.get({ plain: true })
+//         console.log(result)
+//         res.render("blog-detail", { data: result, loggedIn: req.session.loggedIn })
+//     }
+//     catch (err) {
+//         console.log(err);
+//         res.status(500).json(err);
+//     }
+// })
 
 module.exports = router;
