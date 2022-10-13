@@ -68,7 +68,7 @@ Signup & login pages:
 ![LogIn](./public/images/readme/login.png)
 
 ## _Links_
-GitHub Repo URL: https://github.com/A-N26/Proj2-TravelBlogImgHosting
+GitHub Repo URL: https://github.com/A-N26/Proj2-TravelBlogImgHosting-
 <br/>
 Deployed Heroku URL: http://www.example.com
 
