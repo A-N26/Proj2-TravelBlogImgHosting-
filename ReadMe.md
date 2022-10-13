@@ -34,10 +34,10 @@ Html, CSS, Javascript, Node.js, Bootstrap, JQuery, Greensock, MySQL, Sequelize, 
 </br>
 <li>Create a `.env` file in the folder and add values for database (i.e. DB_USER, DB_PW).</li>
 </br>
-<li>Type `node server.js` (or 1st start mysql in terminal and type `source db/schema.sql;` followed with `show databases;` to confirm the database shows up.</li>
+<li>Type `node server.js` (or 1st start mysql in terminal and type `source db/schema.sql;` followed with `show databases;` to confirm the database shows up. Then exit mysql. Now, type `npm run seed` finally followed with `npm start server`)</li>
 </br>
-<li>Then exit mysql. Now, type `npm run seed` finally followed with `npm start server`), go to a browser and type in `https://localhost/'port number'` (replace `'port number'` with a valid port#) and you should see the application.</li>
-</0l>
+<li>Last, but not the least, go to a browser and type in `https://localhost/'port number'` (replace `'port number'` with a valid port#) and you should see the application.</li>
+</ol>
 
 </br>
 
@@ -45,7 +45,7 @@ Html, CSS, Javascript, Node.js, Bootstrap, JQuery, Greensock, MySQL, Sequelize, 
 
 ## _Usage_
 
-Simply click the deployed Heroku link (mentioned under Links section) to access the application. Thereafter, create login credentials. Once done u should be good to explore the application, post img, write comment, etc.</br>
+Simply click the deployed Heroku link (mentioned under Links section) to access the application. Thereafter, create login credentials. Once done you should be good to explore the application, post img, write comment, etc.</br>
 Helpful images/gifs/video are posted below:</br>
 </br>
 Application front page preview:
@@ -91,7 +91,7 @@ Deployed Heroku URL: http://www.example.com
 
 ## _Questions_
 
-If you would like to as me anything (ama) about the project, please contact me on the info mentioned below:
+If you would like to ask Us anything (ama, err...aua!?...) about the project, please contact us on the info mentioned below:
 
 <details>
 
@@ -99,7 +99,7 @@ If you would like to as me anything (ama) about the project, please contact me o
 
 - [Mustapha taylor](https://github.com/mtaylo1), [Aashay Nagar](https://github.com/A-N26), [Chi Chiu Lam](https://github.com/chichiulam2022) & [Loo Wah Kong](https://github.com/andyloo416)
 
-- [My e-mail](Soon...)
+- [My e-mail](A-N26@github.com)
 
 </details>
 
