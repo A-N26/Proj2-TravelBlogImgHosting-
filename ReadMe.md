@@ -30,7 +30,7 @@ Html, CSS, Javascript, Node.js, Bootstrap, JQuery, Greensock, MySQL, Sequelize, 
 ## _Installation_
 
 <ol>
-<li>Type '`npm i`' in terminal to install all npm dependencies from package.json.</li>
+<li>Type `npm i` in terminal to install all npm dependencies from package.json.</li>
 </br>
 <li>Create a `.env` file in the folder and add values for database (i.e. DB_USER, DB_PW).</li>
 </br>
