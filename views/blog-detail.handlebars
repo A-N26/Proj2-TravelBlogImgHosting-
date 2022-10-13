@@ -1,0 +1,39 @@
+{{>navbar}}
+
+<section id="blog-detail">
+  <div class="container align-items-center blog-detail-container">
+    <div class="row">
+      <div class="col-md-7 mt-5 blog-content-box">
+        <div class="row-md-7">
+          <h2 id="blog-content-title">{{data.title}}</h2>
+          <p id="posted-by">posted on {{format_date data.createdAt}}</p>
+          <br>
+          <h5 id="blog-content-text">{{data.content}}</h5>
+        </div>
+        <br>
+        {{!-- <p>posted by {{data.user_id}}</p> --}}
+      </div>
+      <div class="col-md-5 mt-5 mb-5 blog-content-box">
+        <div class="col-md-12">
+          <img class="card-img-top img-fluid" src="{{data.image}}">
+          <div class="mt-3 container">
+            <p>Comments:</p>
+            <div class="container">
+              {{>comment data.comments}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{!-- <div>
+    {{>comment data.comments}}
+  </div> --}}
+
+</section>
+
+
+{{!-- <div class="col-md-5">
+  {{>comment data.comments}}
+</div> --}}

@@ -1,0 +1,45 @@
+<section id="#register-section">
+    <div class="img-container">
+        <img class='bg-img' id="intro-img-register" src="/images/pexels-luis-del-río-15286.jpg">
+    </div>
+
+    <div class="content-container">
+        <form novalidate class="form-box validated-form signup-form">
+            <h2 id="register-text"><span id="brand-name">NoMadTraveller</span> Sign Up</h2>
+            <div class="mb-3">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-control" type="text" id="username-input-signup" placeholder="Enter Your Username"
+                    required>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="password" id="password-input-signup" placeholder="Enter Your Password"
+                    required>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" id="email-input-signup" placeholder="Enter Your Email"
+                    required>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="mb-3 my-1">
+                <button type="submit" class="btn btn-primary" id="register-btn">CREATE AN ACCOUNT</button>
+            </div>
+            <a class="form-link" href="/homepage"><i class="fa-solid fa-house"
+                    style="color:rgb(77, 69, 105);"></i>&nbsp&nbspHOME</a>
+            <div class="mt-5">
+                {{>brandname}}
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="/js/signup.js"></script>
+    <script src="/js/validateForms.js"></script>
+</section>

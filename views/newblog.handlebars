@@ -1,0 +1,42 @@
+{{>navbar}}
+<section id="newblog">
+    <div class="container align-items-center blog-container">
+        <div class="col-md-6 offset-md-3 mt-5">
+
+            <form class="new-post-form" action="/blog/newblog" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-control" type="text" id="title" name="title">
+
+                </div>
+                <div class="mb-5">
+                    <div class="mb-1">
+                        <label for="content" class="form-label">Content</label>
+                        <textarea class="form-control" id="content" name="content" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-file mb-4">
+                    <div class="custom-file">
+                        <input type="file" name="image" class="custom-file-input" id="image">
+                        <label class="custom-file-label" for="image">Choose file</label>
+                    </div>
+                </div>
+                <button class="btn btn-outline-info btn-sm mb-3">Add Post</button>
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+                <script>
+                    $(".custom-file-input").on("change", function () {
+                        var fileName = $(this).val().split("\\").pop();
+                        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+                    });
+                </script>
+
+            </form>
+
+        </div>
+    </div>
+
+</section>

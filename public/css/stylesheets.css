@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    color: aliceblue;
+}
+
+:root {
+    --purple-bg-color: #250130;
+    --orange-brand-color: #e24502;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--purple-bg-color);
+}
+
+.cover-container {
+    max-width: 60vw;
+}
+
+.nav-link {
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(141, 56, 56, 0.5);
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+    transition: 0.3s;
+}
+
+.nav-link.active {
+    color: white;
+    border-bottom-color: rgb(45, 0, 73);
+
+}
+
+.nav-link:hover {
+    color: black;
+    border-bottom-color: rgba(96, 2, 172, 0.5);
+}
+
+/* for intropage */
+.s1 {
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url("../images/adrien-olichon--dX49A6SU9w-unsplash.jpg");
+    background-size: cover;
+}
+
+.s2 {
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url("../images/wp2831093-paris-night-wallpaper.jpg");
+    background-size: cover;
+}
+
+.s3 {
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url("../images/pexels-luis-del-río-15286.jpg");
+    background-size: cover;
+}
+
+.s1 h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    text-shadow: 5px 4px 7px #e24502;
+}
+
+.s2 h1 {
+    text-align: left;
+    margin-left: 1.5em;
+    letter-spacing: 1px;
+    text-shadow: 6px 4px 8px #e24502;
+}
+
+.s3 h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    text-shadow: 6px 4px 8px #8d3915;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: var(--orange-brand-color) !important;
+}
+
+.s3 #intro-here-text {
+    letter-spacing: 2px;
+    color: var(--orange-brand-color);
+    opacity: 0.6;
+    transition: 0.3s ease;
+}
+
+.s3 #intro-here-text:hover {
+    opacity: 1;
+}
+
+
+/* for login & signup forms:*/
+.login-text,
+#register-text {
+    color: rgb(188, 188, 188);
+    border-bottom: 4px solid #553d49;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+#register-text {
+    color: rgb(196, 111, 21);
+    border-bottom: 4px solid #cbc7c7;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex
+}
+
+section .img-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+}
+
+.img-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #2f2828, #1E1E1E);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+.content-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 50%;
+}
+
+.form-box h2 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.social-icons-container li {
+    list-style: none;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    width: 60px;
+    cursor: pointer;
+}
+
+.social-icons-container li img {
+    transition: 0.2s ease;
+    width: 35px;
+}
+
+.social-icons-container img:hover {
+    transform: translateY(4px);
+    box-shadow: 0 5px 2px -2px gray;
+    color: black;
+}
+
+.btn-primary {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(2px);
+    box-shadow: 0 5px 2px -2px rgb(37, 37, 37);
+    background-color: rgb(214, 108, 70);
+    color: rgb(39, 235, 228);
+}
+
+#submit-btn {
+    background-color: #970032;
+}
+
+#register-btn {
+    background-color: #19008b;
+}
+
+.form-label::after {
+    content: "*";
+    padding-left: 4px;
+    color: red;
+}
+
+.form-link {
+    text-decoration: none;
+}
+
+.form-link:hover {
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+/* for homepage: */
+.hero {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url('../images/lake-nature-night-reflection-r1.jpeg');
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(95%);
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(200deg, rgb(10, 9, 15) 49%, rrgb(42, 41, 43)98.8%);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+.text-container {
+    text-align: center;
+    max-width: 750px;
+}
+
+.scrolled {
+    background: var(--purple-bg-color);
+    transition: background 1s ease;
+}
+
+#home-text,
+#about-text {
+    color: rgb(255, 255, 255);
+    letter-spacing: .5px;
+}
+
+#logout,
+#add-blog-text,
+#login-text,
+#nav-register-text {
+    font-family: 'Fredoka One', cursive;
+    color: #ff6827;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+#logout:hover,
+#add-blog-text:hover,
+#login-text:hover,
+#nav-register-text:hover {
+    border-bottom-color: rgba(254, 0, 55, 0.5);
+}
+
+#mad-travellers,
+#brand-name {
+    font-family: 'Fredoka One', cursive;
+    color: var(--orange-brand-color);
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #332336;
+    letter-spacing: .5px;
+}
+
+.text-container h5 {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+}
+
+.text-container h1 {
+    letter-spacing: 1px;
+}
+
+#footer {
+    background-color: #000000;
+}
+
+#divider {
+    color: #322d2e;
+    font-weight: lighter;
+}
+
+#banner {
+    background-color: #970032;
+}
+
+/* for carousel */
+.carousel .item {
+    height: 300px;
+}
+
+#india-text {
+    color: #138808;
+    line-height: 1.5;
+}
+
+#ny-text {
+    color: rgb(213, 143, 12);
+    line-height: 1.5;
+
+}
+
+#rome-text {
+    color: rgb(110, 139, 201);
+    line-height: 1.5;
+
+}
+
+#paris-text {
+    color: #ED2939;
+    line-height: 1.5;
+}
+
+#toronto-text {
+    color: rgb(157, 29, 183);
+    line-height: 1.5;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+/* for blog cards (homepage) */
+.card {
+    text-decoration: none;
+    border: none;
+    background-color: #030000;
+    /* border-radius: 8px; */
+}
+
+.card-title {
+    color: rgb(212, 185, 185);
+}
+
+.card-text {
+    color: rgb(20, 237, 204);
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.2);
+}
+
+.read-more-link {
+    text-decoration: none;
+    color: #e24502;
+    text-transform: uppercase;
+}
+
+.read-more-link:hover {
+    text-decoration: none;
+}
+
+.fa-book-open-reader {
+    color: var(--orange-brand-color);
+}
+
+#date {
+    font-style: oblique;
+}
+
+/* for about us page */
+.flip-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 250px;
+    perspective: 950px;
+    margin-left: 30px;
+}
+
+.flip-card:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: var(--orange-brand-color);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.flip-card-back h4 {
+    padding-top: 20px;
+}
+
+.flip-card img {
+    border-radius: 10px;
+}
+
+.flip-card-back a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.flip-card-back a:hover {
+    color: rgb(244, 228, 228);
+}
+
+.flip-card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+}
+
+/* for new blog form */
+#newblog {
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(rgba(30, 28, 28, 0.5), rgba(3, 0, 0, 0.5)), url('../images/giammarco-q140lHKzXZY-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.blog-container {
+    border-radius: 25px;
+    background: rgba(35, 15, 7, 0.7);
+    width: 60%;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* for blog detail */
+#blog-detail {
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(23, 35, 71);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#posted-by {
+    font-style: italic;
+    font-weight: 900;
+    color: aqua;
+}
+
+#blog-content-title {
+    text-decoration: underline;
+    color: #e36833;
+    font-weight: 900;
+}
+
+#blog-content-text {
+    line-height: 1.8;
+}
+
+.row-md-7 {
+    height: 550px;
+    overflow-y: scroll;
+}
+
+
+.blog-detail-container {
+    border-radius: 25px;
+    background: rgba(36, 28, 26, 0.7);
+    width: 80%;
+}
+
+.comment-text-container {
+    background-color: deepskyblue;
+    border-radius: 10px;
+}
+
+/* .blog-content-box {
+    border: 2px solid red;
+} */

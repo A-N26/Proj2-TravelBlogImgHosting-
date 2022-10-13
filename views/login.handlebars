@@ -1,0 +1,58 @@
+<section>
+    <div class="img-container">
+        <img class='bg-img' id="intro-img-login" src="/images/david-mclenachan-K8IlloSJ4fI-unsplash.jpg">
+    </div>
+
+    <div class="content-container">
+
+        <form id="login-form" action="" method="" novalidate class="form-box validated-form">
+            <h2 class="login-text"><span id="brand-name">NoMadTraveller</span> LOGIN</h2>
+            <div class="mb-3">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-control" type="text" id="username-input-login" placeholder="Enter Your Username"
+                    required>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="password" id="password-input-login" placeholder="Enter Your Password"
+                    required>
+                <div class="valid-feedback">Looks good!</div>
+            </div>
+
+            <div class="mb-4 custom-control custom-checkbox mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                <label class="custom-control-label" for="customControlAutosizing">Remember Me</label>
+            </div>
+
+            <div class="mb-3 my-1">
+                <button type="submit" class="btn btn-primary" id="submit-btn">LOGIN</button>
+            </div>
+
+            <div class="input-box mb-3">
+                <p>Don't have an account?&nbsp&nbsp<a class="form-link" href="/signup">Sign up here</a></p>
+            </div>
+
+            <div class="mt-5">
+                <h5 class="login-text">Also Login With:</h5>
+                <ul class="social-icons-container">
+                    <li><img src="/images/icons8-google-96.png"></li>
+                    <li><img src="/images/icons8-facebook-96.png"></li>
+                    <li><img src="/images/icons8-instagram-96.png"></li>
+                    <li><img src="/images/icons8-twitter-96.png"></li>
+                </ul>
+            </div>
+            <div class="mt-5">
+                {{>brandname}}
+            </div>
+        </form>
+
+    </div>
+
+
+
+    <script src="/js/login.js"></script>
+
+
+</section>
