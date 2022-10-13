@@ -26,7 +26,7 @@
     "handlebars.js",
     "dotenv",
     "nodemon",
-    "1api"
+    "cloudinary"
   ],
   "author": "Mustapha Taylor, Chi Chiu Lam, Loo Wah Kong, A-N26, , ,",
   "license": "ISC",
