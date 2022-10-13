@@ -10,7 +10,7 @@ Group Project 2 - To create a functional real-world full-stack application and d
 
 ## <div align="center"> _Languages Used_ </div>
 
-Html, CSS, Javascript, Node.js, Bootstrap, JQuery, Greensock, MySQL, Sequelize, Bcrypt, Express.js, Handlebars.js
+Html, CSS, Javascript, Node.js, Bootstrap, JQuery, Greensock, MySQL, Sequelize, Bcrypt, Express.js, Handlebars.js, Cloudinary
 
 ---
 
