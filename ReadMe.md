@@ -79,7 +79,7 @@ Deployed Heroku URL: http://www.example.com
 - [Wah Kong LOO](https://github.com/andyloo416)
 - [Aashay NAGAR](https://github.com/A-N26)
 
-## _License_
+## _Licence_
 
 **(Please Click the BADGE for the license details.)**
 
