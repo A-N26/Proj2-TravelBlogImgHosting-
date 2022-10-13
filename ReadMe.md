@@ -20,7 +20,7 @@ Html, CSS, Javascript, Node.js, Bootstrap, JQuery, Greensock, MySQL, Sequelize, 
 - [Usage](#Usage)
 - [Links](#Links)
 - [Credits](#Credits)
-- [Licence](#Licence)
+- [Licence](#License)
 - [Badges](#Badges)
 - [Questions](#Questions)
 - [Tests](#Tests)
@@ -79,7 +79,7 @@ Deployed Heroku URL: http://www.example.com
 - [Wah Kong LOO](https://github.com/andyloo416)
 - [Aashay NAGAR](https://github.com/A-N26)
 
-## _Licence_
+## _License_
 
 **(Please Click the BADGE for the license details.)**
 
