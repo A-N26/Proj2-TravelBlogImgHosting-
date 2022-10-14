@@ -42,11 +42,6 @@ Html, CSS, Javascript, Node.js, Bootstrap, JQuery, Greensock, MySQL, Sequelize, 
 4. Last, but not the least, go to a browser and type in `https://localhost/'port number'` (replace `'port number'` with a valid port#) and you should see the application.
 </br>
 
-
-</br>
-
-**Helpful images/gifs/video are posted below**:
-
 ## _Usage_
 
 Simply click the deployed Heroku link (mentioned under Links section) to access the application. Thereafter, create login credentials. Once done you should be good to explore the application, post img, write comment, etc.</br>
